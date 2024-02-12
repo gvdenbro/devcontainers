@@ -1,0 +1,29 @@
+{
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "version": "2.4.2",
+      "resolved": "ghcr.io/devcontainers/features/common-utils@sha256:bebfdcd6097a35506bf0f064a31e52ad4205467d9d7a226a688f51b851c88b65",
+      "integrity": "sha256:bebfdcd6097a35506bf0f064a31e52ad4205467d9d7a226a688f51b851c88b65"
+    },
+    "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+      "version": "1.0.2",
+      "resolved": "ghcr.io/rocker-org/devcontainer-features/apt-packages@sha256:87a4d7750a596a5db034ba8508782f31aebdc2ffe955c66aaecb33d9de2ecdae",
+      "integrity": "sha256:87a4d7750a596a5db034ba8508782f31aebdc2ffe955c66aaecb33d9de2ecdae"
+    },
+    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+      "version": "1.1.2",
+      "resolved": "ghcr.io/rocker-org/devcontainer-features/quarto-cli@sha256:5974cce8e6859f55907ed01bbe32a9b0dc9704e398b4eabeaab846b6b6bf56da",
+      "integrity": "sha256:5974cce8e6859f55907ed01bbe32a9b0dc9704e398b4eabeaab846b6b6bf56da"
+    },
+    "ghcr.io/rocker-org/devcontainer-features/r-apt:latest": {
+      "version": "0.4.1",
+      "resolved": "ghcr.io/rocker-org/devcontainer-features/r-apt@sha256:2b59f9133922ab042c1a21ad2968beac4f51629171565f870d937f7d466636a9",
+      "integrity": "sha256:2b59f9133922ab042c1a21ad2968beac4f51629171565f870d937f7d466636a9"
+    },
+    "ghcr.io/rocker-org/devcontainer-features/renv-cache:latest": {
+      "version": "0.1.2",
+      "resolved": "ghcr.io/rocker-org/devcontainer-features/renv-cache@sha256:705bba0c78d4caf33a57c9a88bbe8e6e10ca944886c5209f2cf84757a6b8cf73",
+      "integrity": "sha256:705bba0c78d4caf33a57c9a88bbe8e6e10ca944886c5209f2cf84757a6b8cf73"
+    }
+  }
+}
