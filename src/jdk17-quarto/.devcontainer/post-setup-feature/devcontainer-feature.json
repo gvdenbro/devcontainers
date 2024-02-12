@@ -1,0 +1,14 @@
+{
+    "id": "post-setup-feature",
+    "version": "0.0.1",
+    "name": "Post setup feature",
+    "description": "Used to trigger a couple of configs after the other feature have been installed (e.g. adding zsh configs to .zshrc)",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/rocker-org/devcontainer-features/quarto-cli",
+        "ghcr.io/rocker-org/devcontainer-features/r-apt",
+        "ghcr.io/rocker-org/devcontainer-features/r-packages",
+        "ghcr.io/rocker-org/devcontainer-features/apt-packages",
+        "ghcr.io/rocker-org/devcontainer-features/renv-cache"
+    ]
+}
