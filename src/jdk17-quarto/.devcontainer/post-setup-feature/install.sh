@@ -17,6 +17,7 @@ ln -s /usr/bin/fdfind /home/"$USERNAME"/.local/bin/fd
     echo "source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
     echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
     echo "source /usr/share/doc/fzf/examples/key-bindings.zsh"
+    echo "source /usr/share/doc/fzf/examples/completion.zsh"
     echo "plugins+=(fd rg fzf mvn gradle)"
     echo "## end"
 } >> /home/"$USERNAME"/.zshrc
