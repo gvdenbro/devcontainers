@@ -7,6 +7,6 @@
 version: 2
 updates:
  - package-ecosystem: "devcontainers"
-   directory: "/"
+   directory: "/src/jdk17-quarto"
    schedule:
      interval: weekly
