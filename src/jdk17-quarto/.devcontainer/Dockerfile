@@ -10,7 +10,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     openjdk-17-jdk \
     openjdk-17-dbg \
     openjdk-17-source \
-    chromium \
+    chromium-sandbox \
     libmagick++-dev \
     fd-find \
     ripgrep \
