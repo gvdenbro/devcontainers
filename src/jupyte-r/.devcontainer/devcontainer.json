@@ -1,0 +1,27 @@
+{
+	"name": "Jupyter with R kernel",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {
+			"version": "latest",
+			"installJupyterlab": true
+		},
+		"ghcr.io/rocker-org/devcontainer-features/r-apt:latest": {
+			"vscodeRSupport": "full",
+			"installDevTools": true,
+			"installRadian": true,
+			"installRMarkdown": true,
+			"installVscDebugger": true
+		},
+		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+			"packages": "r-cran-data.table,r-cran-tidyverse,r-cran-irkernel",
+			"upgradePackages": true
+		},
+		"ghcr.io/rocker-org/devcontainer-features/rstudio-server": {},
+		"./post-setup-feature": {}
+	},
+	"overrideFeatureInstallOrder": [
+		"ghcr.io/devcontainers/features/python",
+		"ghcr.io/rocker-org/devcontainer-features/r-apt"
+	]
+}

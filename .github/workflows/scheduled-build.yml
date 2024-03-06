@@ -18,9 +18,16 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GERG_REGISTRY_TOKEN }}
 
-      - name: Build and run Dev Container task
+      - name: Build jdk17-quarto
         uses: devcontainers/ci@v0.3
         with:
           subFolder: src/jdk17-quarto
           noCache: true
           imageName: ghcr.io/gvdenbro/jdk17-quarto
+
+      - name: Build jupyte-r
+        uses: devcontainers/ci@v0.3
+        with:
+          subFolder: src/jupyte-r
+          noCache: true
+          imageName: ghcr.io/gvdenbro/jupyte-r

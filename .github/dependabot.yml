@@ -10,3 +10,7 @@ updates:
    directory: "/src/jdk17-quarto"
    schedule:
      interval: weekly
+ - package-ecosystem: "devcontainers"
+   directory: "/src/jupyte-r"
+   schedule:
+     interval: weekly
