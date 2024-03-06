@@ -1,0 +1,13 @@
+{
+    "id": "jupyte-r",
+    "version": "1.0.0",
+    "name": "Jupyter Lab with the additional R kernel and RStudio Server",
+    "description": "Allows development in Jupyter Labd and RStudio Server",
+    "documentationURL": "https://github.com/gvdenbro/devcontainers/",
+    "publisher": "gerg",
+    "platforms": [
+        "Python",
+        "R",
+        "Jupyter"
+    ]
+}

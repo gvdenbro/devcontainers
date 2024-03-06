@@ -1,0 +1,47 @@
+{
+	"name": "Jupyter Lab with the additional R kernel and RStudio Server",
+	"image": "ghcr.io/gvdenbro/jupyte-r:latest",
+	"postCreateCommand": "if [ -f requirements.txt ]; then pip install -r requirements.txt; fi",
+	"postAttachCommand": {
+        "rstudio-start": "rserver",
+		"jupiter-start": "jupyter-lab --no-browser --NotebookApp.token='' --NotebookApp.password=''"
+    },
+    "forwardPorts": [
+        8787,
+		8888
+    ],
+    "portsAttributes": {
+        "8787": {
+            "label": "RStudio IDE"
+        },
+		"8888": {
+            "label": "Jupyter"
+        }
+    },
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"[python]": {
+					"defaultInterpreterPath": "/usr/local/python/current/bin/python"
+				},
+				"[jupyter]": {
+					"themeMatplotlibPlots": true,
+					"widgetScriptSources": [
+						"unpkg.com",
+						"jsdelivr.com"
+					]
+				},
+				"[r]": {
+					"rterm.linux": "/usr/local/python/current/bin/radian",
+					"r.bracketedPaste": true
+				}
+			},
+			"extensions": [
+				"ms-toolsai.jupyter",
+				"ms-python.python",
+				"reditorsupport.r"
+			]
+		}
+	},
+	"remoteUser": "vscode"
+}
